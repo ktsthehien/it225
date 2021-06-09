@@ -1,3 +1,4 @@
+
 from item import Item
 
 class Inventory():
@@ -6,6 +7,9 @@ class Inventory():
     
     def addItem(self, i):
         self.items.append(i)
+
+    def getItems(self):
+        return self.items
     
     def getItemByNumber(self, number):
         reqItem=None
